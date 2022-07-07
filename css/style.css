@@ -19,6 +19,7 @@ a {
     position: relative;
     max-width: 1110px;
     margin: 0 auto;
+    padding: 0 5px;
 }
 ul {
     padding: 17px 16px;
@@ -225,13 +226,13 @@ h2 {
 .card_buy {
     display: block;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
     width: 130px;
-    
     left: 467px;
     top: 1303px;
     background: #F13C6E;
     border-radius: 30px;
-    margin: 14px 0 25px 63px;
     border-color: transparent;
     box-sizing: border-box;
     transition: all 500ms ease; 
@@ -271,6 +272,14 @@ h2 {
     display: block;
     margin-top: 100px;
     vertical-align: top;
+}
+.pink_blocks_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pink_block_big_wrapper {
+    display: inline-block;
 }
 .pink_block {
     vertical-align: top;
@@ -361,7 +370,7 @@ table {
     overflow-x: auto;
 }
 .popular_category {
-    margin: 58px 26px 60px 0;
+    margin: 58px 22px 60px 0;
     display: inline-block;
     width: 255px;
     height: 253px;
@@ -433,13 +442,16 @@ table {
     line-height: 14px;
     color: #828282;
     }
+.roots_wrp {
+    display: flex;
+    justify-content: space-between;
+}
 .protect {
     display: inline-block;
     
 }
 .confidentials {
     display: inline-block;
-    margin-left: 342px;
 }
 
 .hide {
@@ -448,13 +460,53 @@ table {
 .menu_button {
     display: none;
 }
+.break {
+    display: none;
+}
+@media (max-width: 1096px) {
+    .goods_top  {
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    
+    .break {
+        display: block;
+        flex-basis: 100%;
+        height: 0;
+    }
+    .pink_blocks_wrapper {
+        justify-content: center;
+    }
+      
+    .pink_block_big_wrapper{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 15px;
+    }
+    .popular_category {
+        margin: 57px 0px 60px 0;
+        width: 25%;
+    }
+    
+    
+    .card {
+       width: 47%;
+        margin-top: 15px;
+    }
+    .card:last-child {
+        margin: 15px 11px 0 11px;
+    }
 
+}
 @media (max-width: 768px) {
     .container {
         margin: 0 auto;
         position: relative;
         max-width: 760px;
-        
+        padding-right: 5px;
     }
     ul li {
         display: block;
@@ -468,6 +520,10 @@ table {
     .top_menu li a {
         color: #FFFFFF;
         margin-top: 0;
+    }
+    .reCall {
+        height: auto;
+        padding: 10px 20px 10px 20px;
     }
     .top_menu li .reCall span {
         color: #000000;
@@ -511,7 +567,7 @@ table {
         position: absolute;
         z-index: 1;
         background: #F13C6E;
-        top: 85px;
+        top: 86px;
         display: block;
         height: auto;
         width: 100%;
@@ -557,7 +613,7 @@ table {
     }
     .card {
        margin: 5px;
-        width: 100%;
+        width: 48%;
     }
     .card_buy {
         display: inline-block;
@@ -592,11 +648,11 @@ table {
         margin-top: 0;
     }
     .popular_category .titel_cat {
-        font-size: 4vw;
+        font-size: 16px;
         margin-bottom: 10px;
     }
     .popular_category a {
-        font-size: 3vw;
+        font-size: 12px;
         line-height: 25px;
     }
     .popular_category:last-child {
@@ -623,7 +679,7 @@ table {
    }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 540px) {
     .pink_block {
         height: fit-content;
         display: flex;
@@ -633,6 +689,9 @@ table {
         flex-direction: column;
         padding-bottom: 20px;
 
+    }
+    .card {
+        width: 100%;
     }
     .pink_wrap {
         text-align: center;
