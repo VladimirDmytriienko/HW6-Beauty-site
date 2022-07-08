@@ -329,6 +329,7 @@ form input {
     float: right;
 }
 .store_map {
+    margin-top: 45px;
 display: block;
 width: 170px;
 height: 35px;
