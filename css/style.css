@@ -271,7 +271,7 @@ h2 {
 .pink_blocks {
     display: block;
     margin-top: 100px;
-    vertical-align: top;
+  
 }
 .pink_blocks_wrapper {
     display: flex;
@@ -354,20 +354,26 @@ color: #FFFFFF;
 padding: 9px 0 0 29px;
 
 }
-
-td, table , tr {
+.table_response {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.table_product {
+    min-width: 275px;
+    min-height: 118.5px;
     background-color: white;
     border: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-table {
+.table {
     margin-top: 100px;
-    width: 1110px;
-    height: 358px;
-    border-collapse: collapse;
-    text-align: center;
 }
 .table_response {
-    overflow-x: auto;
+   
 }
 .popular_category {
     margin: 58px 22px 60px 0;
